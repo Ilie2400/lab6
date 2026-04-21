@@ -20,10 +20,10 @@ int is_bst(struct node* node, int min, int max) {
            is_bst(node->right, node->data + 1, max);
 }
 
-// Tehnica 2: Pre-order (Nod, Stanga, Dreapta)
+
 void preOrderTraversal(struct node* node) {
     if (node != NULL) {
-        printf("%d ", node->data); // Root e primul vizitat mereu [cite: 50]
+        printf("%d ", node->data); 
         preOrderTraversal(node->left);
         preOrderTraversal(node->right);
     }
