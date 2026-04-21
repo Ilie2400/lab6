@@ -24,12 +24,12 @@ struct node* find_lca(struct node* root, int n1, int n2) {
     return (left != NULL) ? left : right;
 }
 
-// Tehnica 3: Post-order (Stanga, Dreapta, Nod)
+
 void postOrderTraversal(struct node* node) {
     if (node != NULL) {
         postOrderTraversal(node->left);
         postOrderTraversal(node->right);
-        printf("%d ", node->data); // Root e ultimul vizitat mereu [cite: 55]
+        printf("%d ", node->data); 
     }
 }
 
