@@ -13,10 +13,9 @@ struct node* n(int val) {
     return p;
 }
 
-// Functie pentru a transforma arborele in string (afisare recursiva)
 void serialize(struct node* root) {
     if (root == NULL) {
-        printf("# "); // Simbol pentru nod nul
+        printf("# "); 
         return;
     }
     printf("%d ", root->data);
