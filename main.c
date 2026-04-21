@@ -30,7 +30,7 @@ int is_balanced(struct node* root) {
 void inOrderTraversal(struct node* node) {
     if (node != NULL) {
         inOrderTraversal(node->left);
-        printf("%d ", node->data); // Vizitarea nodului [cite: 43]
+        printf("%d ", node->data); 
         inOrderTraversal(node->right);
     }
 }
