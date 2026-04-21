@@ -27,7 +27,6 @@ int is_balanced(struct node* root) {
     return 0;
 }
 
-// Tehnica 1: In-order (Stanga, Nod, Dreapta)
 void inOrderTraversal(struct node* node) {
     if (node != NULL) {
         inOrderTraversal(node->left);
